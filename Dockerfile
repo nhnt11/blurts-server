@@ -1,3 +1,11 @@
+FROM node:10-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+COPY gulpfile.js ./
+COPY public ./public/
+RUN npm install
+RUN npm run build:all
+
 FROM node:10-alpine
 
 RUN addgroup -g 10001 app && \
@@ -9,6 +17,7 @@ WORKDIR /app
 
 USER app
 
+COPY --from=builder --chown=app /app/public ./public
 COPY package.json package.json
 COPY package-lock.json package-lock.json
 
