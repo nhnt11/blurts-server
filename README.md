@@ -13,6 +13,7 @@ the "what" and "why" of data breach alerts.
 
 ## Development
 
+Please refer to our [coding standards](docs/coding-standards) information for code styles, naming conventions and other methodologies.  
 ### Requirements
 
 * [Node](https://nodejs.org/) 10 (with npm)

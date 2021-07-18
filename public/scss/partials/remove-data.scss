@@ -1,0 +1,423 @@
+
+.txt-light-grey {
+  color: rgb(237, 237, 240);
+}
+
+.txt-white {
+  color: rgba(255, 255, 255, 1);
+}
+
+.relay-hero {
+  margin: auto auto 60px auto;
+  max-width: 700px;
+}
+
+.relay-headline {
+  font-size: 44px;
+  line-height: 46px;
+  margin: 0 auto 12px auto;
+}
+
+.relay-headline::before {
+  content: "";
+  display: block;
+  height: 150px;
+  width: 100%;
+  background-image: url("/img/svg/data-removal-large.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 60px auto 40px auto;
+}
+
+.relay-subhead {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: auto;
+}
+
+.relay-info {
+  margin: 40px;
+}
+
+.relay-info-subhead {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 28px;
+  padding-right: 48px;
+}
+
+.relay-info-body {
+  line-height: 27px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.relay-info-body.toggle-child {
+  padding-top: 16px;
+}
+
+.relay-sign-up {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%;
+  max-width: 720px;
+  margin: 20px auto;
+  position: relative;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.relay-sign-up-headline {
+  color: #393473;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.relay-avatar {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 16px;
+}
+
+.relay-sign-up-email {
+  color: #393473;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.relay-info.relay-bullets {
+  padding-top: 0;
+}
+
+.relay-list {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.relay-list li {
+  margin-bottom: 12px;
+  margin-left: 4px;
+}
+
+.relay-list li::before {
+  content: "\2022";
+  display: flex;
+  margin: 0 12px auto 0;
+}
+
+.relay-bullet-link {
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.relay-bullet-link:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.private-relay-dashboard-card {
+  background: var(--monitorGradient);
+  border-radius: 8px;
+  margin: 0 auto 60px;
+  width: 100%;
+}
+
+.private-relay-dashboard-card-body {
+  margin: 0;
+  color: #42425a;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.private-relay-dashboard-card-subhead {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 4px 0;
+  color: rgb(32, 18, 58);
+}
+
+.private-relay-join-waitlist {
+  margin: 4px 0 0 0;
+  line-height: 24px;
+}
+
+.private-relay-dashboard-card-content {
+  width: 100%;
+}
+
+.private-relay-dashboard-card-content::before {
+  background-image: url("/img/svg/data-removal-small.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 100%;
+  width: 35%;
+  margin-right: 28px;
+  content: "";
+  display: inline-block;
+  align-self: center;
+}
+
+.private-relay-dashboard-card-border {
+  padding: 28px;
+  background-color: rgb(249, 247, 253);
+  margin: 0.15rem;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(14, 13, 26, 0), 0 3px 1px -2px rgba(7, 48, 114, 0), 0 2px 4px 0 rgba(34, 0, 51, 0), 0 0 0 1px rgba(32, 18, 58, 0);
+  transition: all 0.2s ease;
+}
+
+.private-relay-dashboard-card:hover {
+  box-shadow: 0 2px 8px 0 rgba(14, 13, 26, 0.12), 0 3px 1px -2px rgba(7, 48, 114, 0.12), 0 2px 4px 0 rgba(34, 0, 51, 0.04), 0 0 0 1px rgba(32, 18, 58, 0.04);
+  transition: all 0.2s ease;
+}
+
+.relay-toggle {
+  fill: #fff !important;
+}
+
+.masking-options {
+  margin: 0;
+}
+
+.toggle-parent.inactive .toggle-child.relay-info-body {
+  display: flex;
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.relay-toggle-button {
+  background-color: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.relay-sign-up-content {
+  transition: all 0.4s ease;
+}
+
+.sending-email {
+  transition: all 0.3s ease;
+}
+
+.sending-email .relay-sign-up-content {
+  filter: blur(0.3px);
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
+
+.relay-sign-up.sending-email {
+  background-color: #e9e9e9;
+  transition: all 0.3s ease;
+}
+
+.relay-sign-up.sending-email::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("/img/svg/new-loader.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+
+.relay-sign-up-confirmation {
+  padding: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.email-sent .relay-sign-up-content {
+  visibility: hidden;
+}
+
+.email-sent .relay-sign-up-confirmation {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 0.3s ease;
+}
+
+.email-sent {
+  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 1);
+  transition: opacity 0.15s ease-in-out;
+}
+
+.email-sent::after {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.relay-confirmation-headline {
+  margin: auto auto 16px auto;
+}
+
+.relay-confirmation-body {
+  margin: 0 auto auto auto;
+  color: #393473;
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 460px;
+}
+
+.relay-confirmation-headline::before {
+  content: "";
+  display: block;
+  background-color: #2ac3a2;
+  border: 3px solid #3fe1b0;
+  background-image: url("/img/svg/white-check.svg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 80px;
+  width: 80px;
+  margin: auto auto 16px auto;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .relay-sign-up {
+    flex: 1;
+  }
+
+  .relay-subhead {
+    max-width: 420px;
+  }
+
+  .relay-info {
+    margin: 40px 0;
+  }
+
+  .private-relay-dashboard-card {
+    margin: 12px auto;
+  }
+
+  .private-relay-dashboard-card-content {
+    flex-direction: column;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .private-relay-dashboard-card-content::before {
+    min-height: 100px;
+    margin-bottom: 16px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .private-relay-join-waitlist {
+    margin-top: 16px;
+  }
+
+  .relay-sign-up-wrapper {
+    padding: 44px 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .relay-hero {
+    margin-bottom: 40px;
+  }
+
+  .relay-info {
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .relay-toggle-button {
+    padding-left: 16px;
+    pointer-events: all;
+  }
+
+  .relay-toggle-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+
+  .relay-info-body.toggle-child {
+    padding-top: 0;
+  }
+
+  .relay-info-body {
+    padding-left: 16px;
+    padding-right: 24px;
+    line-height: 26px;
+    font-size: 16px;
+  }
+
+  .relay-info.toggle-parent {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .relay-info.toggle-parent.active .toggle-child {
+    visibility: visible;
+    max-height: 2000px;
+    opacity: 1;
+    padding-top: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .relay-subhead {
+    max-width: 360px;
+  }
+
+  .relay-headline::before {
+    margin: 0 auto;
+  }
+
+  .relay-headline {
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  .relay-sign-up {
+    padding: 24px;
+  }
+
+  .email-sent.relay-sign-up {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .relay-info-subhead {
+    font-size: 18px;
+  }
+
+  .relay-sign-up-email {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .relay-confirmation-headline::before,
+  .relay-avatar {
+    height: 60px;
+    width: 60px;
+  }
+
+  .relay-avatar {
+    margin-bottom: 8px;
+  }
+}

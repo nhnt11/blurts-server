@@ -3,3 +3,4 @@ coverage
 loadtests
 public/dist
 public/js/polyfills
+gulpfile.js
